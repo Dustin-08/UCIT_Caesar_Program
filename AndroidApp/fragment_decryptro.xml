@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".decryptro">
+
+    <EditText
+        android:id="@+id/chiperEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="암호문(chiperText)를 입력하세요."/>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="앞/뒤"
+            android:textSize="8pt"
+            android:layout_marginLeft="10dp"/>
+
+        <RadioButton
+            android:id="@+id/forwardBtn"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="앞"
+            android:layout_marginLeft="5dp"/>
+
+        <RadioButton
+            android:id="@+id/backwardBtn"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="뒤"
+            android:layout_marginLeft="20dp"/>
+    </RadioGroup>
+    <EditText
+        android:id="@+id/countEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="얼마나 밀지 칸수를 입력하세요."/>
+    <Button
+        android:id="@+id/decryptoStartBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="복호화_시작"
+        android:background="#FF0000"
+        android:textColor="#ffffff"
+        android:textSize="11pt"/>
+    <TextView
+        android:id="@+id/decryptoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="복호화: "
+        android:textSize="11pt" />
+
+</LinearLayout>
