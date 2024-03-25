@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="정보보안실무_B반_최승우"
+        android:background="#0000FF"
+        android:textColor="#ffffff"
+        android:textSize="11pt"/>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="암호화/복호화"
+            android:textSize="8pt"
+            android:layout_marginLeft="10dp"/>
+
+        <RadioButton
+            android:id="@+id/encryptoBtn"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="암호화"
+            android:layout_marginLeft="5dp"/>
+
+        <RadioButton
+            android:id="@+id/decryptoBtn"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="복호화"
+            android:layout_marginLeft="20dp"/>
+    </RadioGroup>
+    <FrameLayout
+        android:id="@+id/frContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Developed_by_Seungwoo_Choi"
+        android:background="#0000FF"
+        android:textColor="#ffffff"
+        android:textSize="11pt"/>
+
+</LinearLayout>
